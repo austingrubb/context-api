@@ -14,16 +14,32 @@ export class Person extends Component {
                 <button onClick={context.add}>add</button>
                 <button onClick={context.subtract}>subtract</button>
                 {context.state.num}
-                <button onClick={context.multiply}>multiply</button>
-                <button onClick={context.divide}>divide</button>
+                <button onClick ={context.multiply}>multiply</button>
+                <button onClick ={context.divide}>divide</button>
               </div>
             )
           }}
         </MyContext.Consumer>
-        
       </div>
     )
   }
 }
 
 export default Person
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -17,11 +17,11 @@ export class context extends Component {
                 return this.setState({num: this.state.num -1})
             },
             multiply: () => {
-                return this.setState({num: this.state.num * this.state.num})
+                return this.setState({num: this.state.num * 2})
             },
             divide: () => {
-                return this.setState({num: this.state.num % this.state.num})
-            },
+                return this.setState({num: this.state.num % 2})
+            }
         }}>
             {this.props.children}
         </MyContext.Provider>
@@ -30,3 +30,4 @@ export class context extends Component {
 }
 
 export default context
+
